@@ -96,16 +96,16 @@ abstract class BaseCommand
     /**
      * Actually execute a command.
      *
-     * @param array<string, mixed> $params
+     * @param array<int|string, string|null> $params
      */
     abstract public function run(array $params);
 
     /**
      * Can be used by a command to run other commands.
      *
-     * @throws ReflectionException
-     *
      * @return mixed
+     *
+     * @throws ReflectionException
      */
     protected function call(string $command, array $params = [])
     {
