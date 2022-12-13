@@ -1,5 +1,43 @@
 # Changelog
 
+## [v4.2.10](https://github.com/codeigniter4/CodeIgniter4/tree/v4.2.10) (2022-11-05)
+[Full Changelog](https://github.com/codeigniter4/CodeIgniter4/compare/v4.2.9...v4.2.10)
+
+### Fixed Bugs
+* docs: fix PHPDoc types in Session by @kenjis in https://github.com/codeigniter4/CodeIgniter4/pull/6796
+* fix: output "0" at the end of toolbar js when Kint::$enabled_mode is false by @kenjis in https://github.com/codeigniter4/CodeIgniter4/pull/6809
+
+### Refactoring
+* Refactor assertHeaderEmitted and assertHeaderNotEmitted by @paulbalandan in https://github.com/codeigniter4/CodeIgniter4/pull/6806
+* fix: variable types for PHPStan 1.9.0 by @kenjis in https://github.com/codeigniter4/CodeIgniter4/pull/6810
+
+## [v4.2.9](https://github.com/codeigniter4/CodeIgniter4/tree/v4.2.9) (2022-10-30)
+[Full Changelog](https://github.com/codeigniter4/CodeIgniter4/compare/v4.2.8...v4.2.9)
+
+**Hotfix release to fix PHPUnit errors (see https://github.com/codeigniter4/CodeIgniter4/pull/6794)**
+
+## [v4.2.8](https://github.com/codeigniter4/CodeIgniter4/tree/v4.2.8) (2022-10-30)
+[Full Changelog](https://github.com/codeigniter4/CodeIgniter4/compare/v4.2.7...v4.2.8)
+
+### Fixed Bugs
+* Fix DotEnv class turning `export` to empty string by @paulbalandan in https://github.com/codeigniter4/CodeIgniter4/pull/6625
+* Remove unneeded `$logger` property in `Session` by @paulbalandan in https://github.com/codeigniter4/CodeIgniter4/pull/6647
+* fix: Add missing CLIRequest::getCookie() by @sclubricants in https://github.com/codeigniter4/CodeIgniter4/pull/6646
+* fix: routes registration bug by @kenjis in https://github.com/codeigniter4/CodeIgniter4/pull/6644
+* Bug: showError in CLI/BaseCommand use hardcoded error view path by @fpoy in https://github.com/codeigniter4/CodeIgniter4/pull/6657
+* fix: getGetPost() and getPostGet() when index is null by @michalsn in https://github.com/codeigniter4/CodeIgniter4/pull/6675
+* fix: add missing methods to BaseConnection by @kenjis in https://github.com/codeigniter4/CodeIgniter4/pull/6712
+* fix: bug that esc() accepts invalid context '0' by @kenjis in https://github.com/codeigniter4/CodeIgniter4/pull/6722
+* fix: [Postgres] reset binds when replace() method is called multiple times in the context by @michalsn in https://github.com/codeigniter4/CodeIgniter4/pull/6728
+* fix: [SQLSRV] _getResult() return object for preparedQuery class by @michalsn in https://github.com/codeigniter4/CodeIgniter4/pull/6718
+* Fix error handler callback by @paulbalandan in https://github.com/codeigniter4/CodeIgniter4/pull/6724
+* bug: Supply mixin for TestResponse by @MGatner in https://github.com/codeigniter4/CodeIgniter4/pull/6756
+* fix: CodeIgniter::run() doesn't respect $returnResponse by @kenjis in https://github.com/codeigniter4/CodeIgniter4/pull/6737
+* Bug: ResponseTest::testSetLastModifiedWithDateTimeObject depends on time by @fpoy in https://github.com/codeigniter4/CodeIgniter4/pull/6683
+* fix: workaround for Faker deprecation errors in PHP 8.2 by @kenjis in https://github.com/codeigniter4/CodeIgniter4/pull/6758
+* Add .gitattributes to framework by @totoprayogo1916 in https://github.com/codeigniter4/CodeIgniter4/pull/6774
+* Delete admin/module directory by @paulbalandan in https://github.com/codeigniter4/CodeIgniter4/pull/6775
+
 ## [v4.2.7](https://github.com/codeigniter4/CodeIgniter4/tree/v4.2.7) (2022-10-06)
 [Full Changelog](https://github.com/codeigniter4/CodeIgniter4/compare/v4.2.6...v4.2.7)
 
